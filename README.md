@@ -1,7 +1,7 @@
 # scriptRepo
 record some scripts
 
-心得:  
+*tips*:  
 ---
 windows可以在pycharm里写  
 linux
