@@ -1,0 +1,17 @@
+Basic Auth with Raw HTTP Headers
+Preemptive Basic Authentication basically means pre-sending the Authorization header.
+
+So – instead of going through the rather complex previous example to set it up, we can take control of this header and construct it by hand:
+
+HttpGet request = new HttpGet(URL_SECURED_BY_BASIC_AUTHENTICATION);
+String auth = DEFAULT_USER + ":" + DEFAULT_PASS;
+byte[] encodedAuth = Base64.encodeBase64(
+  auth.getBytes(StandardCharsets.ISO_8859_1));
+String authHeader = "Basic " + new String(encodedAuth);
+request.setHeader(HttpHeaders.AUTHORIZATION, authHeader);
+ 
+HttpClient client = HttpClientBuilder.create().build();
+HttpResponse response = client.execute(request);
+ 
+int statusCode = response.getStatusLine().getStatusCode();
+assertThat(statusCode, equalTo(HttpStatus.SC_OK));
