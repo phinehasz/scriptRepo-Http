@@ -1,0 +1,3 @@
+SELECT kee from projects
+WHERE scope = 'PRJ' AND qualifier = 'TRK'
+AND created_at<?
