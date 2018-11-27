@@ -7,8 +7,10 @@ windows可以在pycharm里写
 linux
 touch 一个py文件
 如果是windows写好测试了的,放linux,
-要`vim xx.py`  
-然后 `:set ff=unix`  
+要  
+`vim xx.py`  
+然后  
+`:set ff=unix`  
 因为windows的分隔符和unix不同
 
 linux脚本开头要 
