@@ -1,5 +1,5 @@
 # scriptRepo
-record some scripts
+record some scripts & python learning
 
 *tips*:  
 ---
