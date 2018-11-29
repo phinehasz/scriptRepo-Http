@@ -20,3 +20,6 @@ print(findMinAndMax(list))
 
 print([x * x for x in range(1, 11) if x % 2 == 0])
 print([x * y for x in 'zxy' for y in range(3,7)])
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+print([s.lower() for s in L1 if isinstance(s,str)])
