@@ -21,5 +21,5 @@ linux脚本开头要
 可以使用中文了~  
 
 
-`chmod +x somefile.py`
+`chmod +x somefile.py`  
 `python somefile.py`
