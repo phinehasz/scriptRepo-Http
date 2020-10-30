@@ -20,5 +20,6 @@ linux脚本开头要
 ```
 可以使用中文了~  
 
-脚本写完想直接和sh一样运行可以 
+
 `chmod +x somefile.py`
+`python somefile.py`
